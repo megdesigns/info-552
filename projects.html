@@ -16,7 +16,7 @@
       background-color: #f5f5f5;
       color: #333;
     }
-  
+    
     nav {
       position: fixed;
       top: 0;
@@ -55,7 +55,6 @@
       background-color: yellow;
     }
     
-    /* Section Styles */
     section {
       min-height: 100vh;
       padding: 80px 20px 40px;
@@ -212,8 +211,7 @@
       margin-right: 8px;
       margin-bottom: 8px;
     }
-    
- 
+
     footer {
       background-color: #333;
       color: white;
@@ -230,7 +228,6 @@
       text-decoration: underline;
     }
     
-   
     @media (max-width: 768px) {
       .project-tabs {
         flex-direction: column;
@@ -258,7 +255,7 @@
   </style>
 </head>
 <body>
-  <!-- Navigation -->
+
   <nav id="navbar">
     <ul>
       <li><a href="index.html" class="nav-link">Home</a></li>
@@ -269,7 +266,6 @@
     </ul>
   </nav>
   
-
   <section id="projects" class="projects-section">
     <div class="container">
       <h1>My Projects</h1>
@@ -296,9 +292,9 @@
             <span class="tag">GitHub</span>
             <span class="tag">Netlify</span>
           </div>
-          <a href="#" class="project-link">View Community Project</a>
+          <a href="#" class="project-link">View Project</a>
         </div>
-        
+           
         <div class="course-card">
           <div class="course-title">
             <span class="course-name">UX Research Methods</span>
@@ -311,7 +307,7 @@
             <span class="tag">Data Analysis</span>
             <span class="tag">User Research</span>
           </div>
-          <a href="#" class="project-link">View Database Project</a>
+          <a href="#" class="project-link">View Project</a>
         </div>
         
         <div class="course-card">
@@ -327,6 +323,8 @@
             <span class="tag">User Research</span>
             <span class="tag">User Feedback</span>
           </div>
+          <a href="#" class="project-link">View Project</a>
+        </div>
            
         <div class="course-card">
           <div class="course-title">
@@ -338,39 +336,47 @@
             <span class="tag">Figma</span>
             <span class="tag">Prototyping</span>
             <span class="tag">Usability Testing</span>
-            <span class="tag">User Feedback</span>
           </div>
-          <a href="#" class="project-link">View UX Project</a>
+          <a href="#" class="project-link">View Project</a>
         </div>
+      </div>
 
       <div id="personal" class="project-content" style="display: none;">
         <h2>Personal & Professional Projects</h2>
         
-        <div class="project-grid">
-          <div class="personal-project-card">
-            <div class="project-image">
-              <img src="/api/placeholder/400/300" alt="Community Library Project">
-            </div>
-            <h3>Webapp for Oakline Properties, a real estate company</h3>
-            <p>Volunteered to design and implement a digital catalog system for a neighborhood community library, making over 5,000 books searchable and manageable.</p>
-            <div class="tags">
-              <span class="tag">HTML/CSS</span>
-              <span class="tag">JavaScript</span>
-              <span class="tag">GitHub</span>
-              <span class="tag">Netlify</span>
-            </div>
-            <a href="#" class="project-link">View Project</a>
+        <div class="course-card">
+          <div class="course-title">
+            <span class="course-name">Webapp for Oakline Properties</span>
+            <span class="course-code">Personal</span>
           </div>
+          <p>Volunteered to design and implement a digital catalog system for a neighborhood community library, making over 5,000 books searchable and manageable.</p>
+          <div class="tags">
+            <span class="tag">HTML/CSS</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">GitHub</span>
+            <span class="tag">Netlify</span>
+          </div>
+          <a href="#" class="project-link">View Project</a>
+        </div>
         
-        <h3>Professional Work Projects</h3>
-        <p>For more detailed information about my professional work projects, please see my <a href="resume.html" style="color: #333; text-decoration: underline;">resume</a> or contact me directly.</p>
+        <div class="course-card">
+          <div class="course-title">
+            <span class="course-name">Professional Work Projects</span>
+            <span class="course-code">Work</span>
+          </div>
+          <p>For more detailed information about my professional work projects, please see my <a href="resume.html" style="color: #333; text-decoration: underline;">resume</a> or contact me directly.</p>
+          <div class="tags">
+            <span class="tag">Professional</span>
+            <span class="tag">Work Experience</span>
+          </div>
+        </div>
       </div>
     </div>
   </section>
   
 
   <footer>
-    <p> Contact me: meg444@drexel.edu</p>
+    <p>Contact me: meg444@drexel.edu</p>
     <p>&copy; 2025 My Portfolio. All Rights Reserved.</p>
     <p>Created for INFO 552 Assignment</p>
   </footer>
