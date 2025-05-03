@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Associations - My Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+    
+    body {
+      background-color: #f5f5f5;
+      color: #333;
+    }
+    
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: lightblue;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      z-index: 1000;
+    }
+    
+    nav ul {
+      list-style-type: none;
+      display: flex;
+      padding: 0;
+      overflow: hidden;
+    }
+    
+    nav li {
+      float: left;
+    }
+    
+    nav li a {
+      display: block;
+      color: black;
+      text-align: center;
+      padding: 18px 20px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: all 0.3s ease;
+    }
+    
+    nav li a:hover {
+      background-color:#e1c6ff;
+    }
+    
+    nav li a.active {
+      background-color: #c191f7;
+    }
+    
+    section {
+      min-height: 100vh;
+      padding: 80px 20px 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      color: #222;
+    }
+    
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 15px;
+      color: #333;
+    }
+    
+    p {
+      margin-bottom: 15px;
+      line-height: 1.6;
+    }
+    
+    #home {
+      background-color: #daeaea;
+      text-align: center;
+    }
+    
+    .hero {
+      padding: 40px 0;
+    }
+    
+    .hero h1 {
+      font-size: 3.5rem;
+      margin-bottom: 20px;
+    }
+    
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 800px;
+      margin: 0 auto 30px;
+    }
+    
+    .btn {
+      display: inline-block;
+      background-color: #333;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: all 0.3s ease;
+    }
+    
+    .btn:hover {
+      background-color: #555;
+      transform: translateY(-2px);
+    }
+    
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    
+    footer a {
+      color: lightblue;
+      text-decoration: none;
+    }
+    
+    footer a:hover {
+      text-decoration: underline;
+    }
+    
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2.5rem;
+      }
+    }
+    
+    .profile-image {
+      max-width: 250px;
+      margin: 20px auto;
+      display: block;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+
+    /* Associations Page Specific Styles */
+    .associations-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+    
+    .association-card {
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .association-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+    
+    .association-img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-bottom: 1px solid #eee;
+    }
+    
+    .association-content {
+      padding: 20px;
+    }
+    
+    .association-content h3 {
+      font-size: 1.4rem;
+      margin-bottom: 10px;
+      color: #222;
+    }
+    
+    .association-btn {
+      display: inline-block;
+      background-color: #c191f7;
+      color: white;
+      padding: 10px 18px;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 15px;
+      transition: all 0.3s ease;
+    }
+    
+    .association-btn:hover {
+      background-color: #a175d8;
+      transform: translateY(-2px);
+    }
+  </style>
+</head>
+<body>
+
+<nav id="navbar">
+  <ul>
+    <li><a href="index.html" class="nav-link">Home</a></li>
+    <li><a href="about.html" class="nav-link">About</a></li>
+    <li><a href="resume.html" class="nav-link">Resume</a></li>
+    <li><a href="projects.html" class="nav-link">Projects</a></li>
+    <li><a href="associations.html" class="nav-link active">Associations</a></li>
+  </ul>
+</nav>
+
+<section id="associations">
+  <div class="container">
+    <h1>Professional Associations</h1>
+    <p>As a UI/UX designer, I'm interested in joining these professional organizations to stay updated with industry trends, connect with fellow designers, and continue my professional growth.</p>
+    
+    <div class="associations-grid">
+      <div class="association-card">
+        <img src="/api/placeholder/600/300" alt="IXDA Logo" class="association-img">
+        <div class="association-content">
+          <h3>Interaction Design Association (IxDA)</h3>
+          <p>A global community of interaction design professionals dedicated to advancing the discipline of interaction design through discussion, education, advocacy, and community building.</p>
+          <p>I plan to join IxDA to access their annual conferences, local meetups, and resources for designers at all career stages.</p>
+          <a href="https://ixda.org/" target="_blank" class="association-btn">Visit Website</a>
+        </div>
+      </div>
+      
+      <div class="association-card">
+        <img src="/api/placeholder/600/300" alt="User Experience Professionals Association Logo" class="association-img">
+        <div class="association-content">
+          <h3>User Experience Professionals Association (UXPA)</h3>
+          <p>An international organization dedicated to promoting usability concepts and techniques worldwide. UXPA supports people who research, design, and evaluate the user experience of products and services.</p>
+          <p>I'm planning to join UXPA to participate in their conferences, access their publications, and connect with their local chapter for networking and professional development.</p>
+          <a href="https://uxpa.org/" target="_blank" class="association-btn">Visit Website</a>
+        </div>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2025 My Portfolio. All rights reserved.</p>
+  <p>Contact: <a href="mailto:email@example.com">email@example.com</a></p>
+</footer>
+
+</body>
+</html>
