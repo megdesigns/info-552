@@ -1,234 +1,180 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
   <title>Resume - My Portfolio</title>
   <style>
-     {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: Arial, sans-serif;
-    }
-    
     body {
       background-color: #f5f5f5;
+      font-family: Arial, sans-serif;
       color: #333;
-    }
-    
-    nav {
-      position: fixed;
-      top: 0;
-      width: 100%;
-      background-color: lightblue;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      z-index: 1000;
-    }
-    
-    nav ul {
-      list-style-type: none;
-      display: flex;
+      margin: 0;
       padding: 0;
+    }
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      background-color: lightblue;
       overflow: hidden;
     }
-    
-    nav li {
+
+    li {
       float: left;
     }
-    
-    nav li a {
+
+    li a {
       display: block;
       color: black;
       text-align: center;
       padding: 18px 20px;
       text-decoration: none;
       font-weight: bold;
-      transition: all 0.3s ease;
     }
-    
-    nav li a:hover {
-      background-color:#e1c6ff;
+
+    li a:hover {
+      background-color: #e1c6ff;
     }
-    
-    nav li a.active {
+
+    li a.active {
       background-color: #c191f7;
     }
-    
-    section {
-      min-height: 100vh;
-      padding: 80px 20px 40px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
-    
-    .container {
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-    
-    h1 {
-      font-size: 2.5rem;
-      margin-bottom: 20px;
-      color: #222;
-    }
-    
-    h2 {
-      font-size: 2rem;
-      margin-bottom: 15px;
-      color: #333;
-    }
-    
-    p {
-      margin-bottom: 15px;
-      line-height: 1.6;
-    }
-    
-    #home {
+
+    #resume {
       background-color: #daeaea;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      margin-bottom: 20px;
       text-align: center;
     }
-    
-    .hero {
-      padding: 40px 0;
+
+    h2 {
+      font-size: 1.5rem;
+      margin-top: 30px;
+      margin-bottom: 10px;
     }
-    
-    .hero h1 {
-      font-size: 3.5rem;
-      margin-bottom: 20px;
-    }
-    
-    .hero p {
+
+    h3 {
       font-size: 1.2rem;
-      max-width: 800px;
-      margin: 0 auto 30px;
+      margin-top: 20px;
+      margin-bottom: 10px;
     }
-    
+
+    p, li {
+      margin-bottom: 10px;
+      line-height: 1.6;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: left;
+    }
+
     .btn {
       display: inline-block;
       background-color: #333;
       color: white;
       padding: 12px 24px;
-      border-radius: 4px;
       text-decoration: none;
       font-weight: bold;
-      transition: all 0.3s ease;
+      margin: 20px auto;
+      display: block;
+      width: fit-content;
     }
-    
+
     .btn:hover {
       background-color: #555;
-      transform: translateY(-2px);
     }
-    
+
     footer {
       background-color: #333;
       color: white;
       text-align: center;
       padding: 20px;
     }
-    
+
     footer a {
       color: lightblue;
       text-decoration: none;
     }
-    
+
     footer a:hover {
       text-decoration: underline;
-    }
-    
-    @media (max-width: 768px) {
-      .hero h1 {
-        font-size: 2.5rem;
-      }
-    }
-    
-    .profile-image {
-      max-width: 250px;
-      margin: 20px auto;
-      display: block;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
     }
   </style>
 </head>
 <body>
 
-<nav id="navbar">
   <ul>
-    <li><a href="index.html" class="nav-link">Home</a></li>
-    <li><a href="about.html" class="nav-link">About</a></li>
-    <li><a href="resume.html" class="nav-link active">Resume</a></li>
-    <li><a href="projects.html" class="nav-link">Projects</a></li>
-    <li><a href="associations.html" class="nav-link">Associations</a></li>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="resume.html" class="active">Resume</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="associations.html">Associations</a></li>
   </ul>
-</nav>
 
-<section id="resume">
-  <div class="container">
+  <div id="resume">
     <h1>Professional Resume</h1>
-    
-    <a href="/resume.pdf" download class="btn download-btn">Download PDF Version</a>
-    
-    <div class="resume-section">
-      <h2>Education</h2>
-      
-      <div class="edu-item">
-        <div class="edu-degree">Master of Science in Human-Computer Interaction and User Experience</div>
-        <div class="edu-school">Drexel University</div>
-        <div class="edu-date">Expected Graduation: June 2026</div>
-        <p>Relevant Coursework: Web Design, Designing with Data, Prototyping the User Experience, UX Research Methods</p>
-      </div>
-      
-      <div class="edu-item">
-        <div class="edu-degree">Bachelor of Arts in English Literature</div>
-        <div class="edu-school">State University</div>
-        <div class="edu-date">Graduated: May 2023</div>
-        <p>Minor in Computer Science</p>
-        <p>Graduated with Honors (3.8 GPA)</p>
-      </div>
-    </div>
-    
-    <div class="resume-section">
-      <h2>Work Experience</h2>
-      
-      <div class="job-item">
-        <div class="job-title">Graduate Writing Center</div>
-        <div class="job-company">Drexel University</div>
-        <div class="job-date">October 2024 - Present</div>
-        <ul class="job-duties">
-          <li>Assisted students in developing and improving their written communication skills through use of brainstorming, drafting, and outlining strategies. </li>
-          <li>Reviewed and provided constructive feedback to students enhancing their writing and evaluation skills.</li>
-        </ul>
-      </div>
-      
-      <div class="job-item">
-        <div class="job-title">UI/UX Designer</div>
-        <div class="job-company">Department of Information Science</div>
-        <div class="job-date">July 2020 - July 2024</div>
-        <ul class="job-duties">
-          <li>Designed and implemented responsive, visually appealing, and accessible user interfaces for web and mobile </li>
-          <li>Conducted user research and usability testing to gather feedback and improve design solutions</li>
-          <li>Collaborated with cross-functional teams to ensure design consistency and alignment with project goals</li>
-          <li>Created wireframes, prototypes, and high-fidelity mockups using design tools such as Figma and Adobe XD</li>
-        </ul>
-      </div>
-      
-    <div class="resume-section">
-      <h2>Skills</h2>
-      
-      <h3>Technical Skills and Tools</h3>
-      <ul class="skills-list">
-        <li>UI Design</li>
-        <li>UX Design</li>
-        <li>UX Research</li>
-        <li>Prototyping</li>
-        <li>Usability Testing</li>
-        <li>HTML, CSS, JavaScript</li>
-        <li>Figma, Adobe XD, Sketch</li>
-        <li>GitHub</li>
-        <li>Framer</li>
-      </ul>
-    
-    <a href="/resume.pdf" download class="btn download-btn">Download PDF Version</a>
+
+    <a href="/resume.pdf" download class="btn">Download PDF Version</a>
+
+    <h2>Education</h2>
+
+    <h3>Master of Science in Human-Computer Interaction and User Experience</h3>
+    <p>Drexel University</p>
+    <p>Expected Graduation: June 2026</p>
+    <p>Relevant Coursework: Web Design, Designing with Data, Prototyping the User Experience, UX Research Methods</p>
+
+    <h3>Bachelor of Arts in English Literature</h3>
+    <p>State University</p>
+    <p>Graduated: May 2023</p>
+    <p>Minor in Computer Science</p>
+    <p>Graduated with Honors (3.8 GPA)</p>
+
+    <h2>Work Experience</h2>
+
+    <h3>Graduate Writing Center</h3>
+    <p>Drexel University</p>
+    <p>October 2024 - Present</p>
+    <ul>
+      <li>Assisted students in developing and improving their written communication skills through use of brainstorming, drafting, and outlining strategies.</li>
+      <li>Reviewed and provided constructive feedback to students enhancing their writing and evaluation skills.</li>
+    </ul>
+
+    <h3>UI/UX Designer</h3>
+    <p>Department of Information Science</p>
+    <p>July 2020 - July 2024</p>
+    <ul>
+      <li>Designed and implemented responsive, visually appealing, and accessible user interfaces for web and mobile.</li>
+      <li>Conducted user research and usability testing to gather feedback and improve design solutions.</li>
+      <li>Collaborated with cross-functional teams to ensure design consistency and alignment with project goals.</li>
+      <li>Created wireframes, prototypes, and high-fidelity mockups using design tools such as Figma and Adobe XD.</li>
+    </ul>
+
+    <h2>Skills</h2>
+    <h3>Technical Skills and Tools</h3>
+    <ul>
+      <li>UI Design</li>
+      <li>UX Design</li>
+      <li>UX Research</li>
+      <li>Prototyping</li>
+      <li>Usability Testing</li>
+      <li>HTML, CSS, JavaScript</li>
+      <li>Figma, Adobe XD, Sketch</li>
+      <li>GitHub</li>
+      <li>Framer</li>
+    </ul>
+
+    <a href="/resume.pdf" download class="btn">Download PDF Version</a>
   </div>
-</section>
+
+  <footer>
+    <p>Contact me: meg444@drexel.edu</p>
+    <p>&copy; 2025 My Portfolio. All Rights Reserved.</p>
+    <p>Created for INFO 552 Assignment</p>
+  </footer>
+
 </body>
 </html>
