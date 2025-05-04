@@ -1,187 +1,132 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Portfolio</title>
   <style>
-     {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: Arial, sans-serif;
-    }
-    
     body {
       background-color: #f5f5f5;
+      font-family: Arial, sans-serif;
       color: #333;
-    }
-    
-    nav {
-      position: fixed;
-      top: 0;
-      width: 100%;
-      background-color: lightblue;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      z-index: 1000;
-    }
-    
-    nav ul {
-      list-style-type: none;
-      display: flex;
+      margin: 0;
       padding: 0;
+    }
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      background-color: lightblue;
       overflow: hidden;
     }
-    
-    nav li {
+
+    li {
       float: left;
     }
-    
-    nav li a {
+
+    li a {
       display: block;
       color: black;
       text-align: center;
       padding: 18px 20px;
       text-decoration: none;
       font-weight: bold;
-      transition: all 0.3s ease;
     }
-    
-    nav li a:hover {
-      background-color:#e1c6ff;
+
+    li a:hover {
+      background-color: #e1c6ff;
     }
-    
-    nav li a.active {
-       background-color: #c191f7;
+
+    #home {
+      background-color: #daeaea;
+      text-align: center;
+      padding: 40px 20px;
     }
-    
-    section {
-      min-height: 100vh;
-      padding: 80px 20px 40px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
-    
-    .container {
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-    
+
     h1 {
       font-size: 2.5rem;
       margin-bottom: 20px;
-      color: #222;
     }
-    
+
     h2 {
       font-size: 2rem;
       margin-bottom: 15px;
-      color: #333;
     }
-    
+
     p {
       margin-bottom: 15px;
       line-height: 1.6;
     }
-    
-    #home {
-      background-color: #daeaea;
-      text-align: center;
+
+    img {
+      max-width: 450px;
+      margin: 20px auto;
+      display: block;
     }
-    
-    .hero {
-      padding: 40px 0;
-    }
-    
-    .hero h1 {
-      font-size: 3.5rem;
-      margin-bottom: 20px;
-    }
-    
-    .hero p {
-      font-size: 1.2rem;
-      max-width: 800px;
-      margin: 0 auto 30px;
-    }
-    
+
     .btn {
       display: inline-block;
       background-color: #333;
       color: white;
       padding: 12px 24px;
-      border-radius: 4px;
       text-decoration: none;
       font-weight: bold;
-      transition: all 0.3s ease;
     }
-    
+
     .btn:hover {
       background-color: #555;
-      transform: translateY(-2px);
     }
-    
+
+    .philosophy {
+      padding: 30px 20px;
+    }
+
     footer {
       background-color: #333;
       color: white;
       text-align: center;
       padding: 20px;
     }
-    
+
     footer a {
       color: lightblue;
       text-decoration: none;
     }
-    
+
     footer a:hover {
       text-decoration: underline;
-    }
-    
-    @media (max-width: 768px) {
-      .hero h1 {
-        font-size: 2.5rem;
-      }
-    }
-    
-    .profile-image {
-      max-width: 450px;
-      margin: 20px auto;
-      display: block;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
     }
   </style>
 </head>
 <body>
 
-  <nav id="navbar">
-    <ul>
-      <li><a href="index.html" class="nav-link active">Home</a></li>
-      <li><a href="about.html" class="nav-link">About</a></li>
-      <li><a href="resume.html" class="nav-link">Resume</a></li>
-      <li><a href="projects.html" class="nav-link">Projects</a></li>
-      <li><a href="associations.html" class="nav-link">Associations</a></li>
-    </ul>
-  </nav>
-  
-  <section id="home">
-    <div class="container hero">
-      <h1>Welcome to My Portfolio</h1>
-      <img src="/profileimage.png" alt="My Profile Image" class="profile-image">
-      <p>"The only way to do great work is to love what you do." - Steve Jobs</p>
-      
-      <h2>Professional Philosophy</h2>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="resume.html">Resume</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="associations.html">Associations</a></li>
+  </ul>
+
+  <div id="home">
+    <h1>Welcome to My Portfolio</h1>
+    <img src="/profileimage.png" alt="My Profile Image">
+    <p>"The only way to do great work is to love what you do." - Steve Jobs</p>
+
+    <h2>Professional Philosophy</h2>
+    <div class="philosophy">
       <p>Design, to me, is about connection, bridging the gap between people and technology in ways that feel intuitive, empowering, and human.</p>
-      
+
       <p>As a UI/UX designer, my philosophy is rooted in empathy, creativity, and a relentless commitment to the user. I believe that by deeply understanding users—their needs, behaviors, and contexts, I can craft digital experiences that not only solve real-world problems but also bring delight and accessibility to everyone.</p>
-      
-      <a href="projects.html" class="btn">View My Projects</a>
     </div>
-  </section>
-  
+
+    <a href="projects.html" class="btn">View My Projects</a>
+  </div>
+
   <footer>
-    <p> Contact me: meg444@drexel.edu</p>
+    <p>Contact me: meg444@drexel.edu</p>
     <p>&copy; 2025 My Portfolio. All Rights Reserved.</p>
     <p>Created for INFO 552 Assignment</p>
   </footer>
+
 </body>
 </html>
