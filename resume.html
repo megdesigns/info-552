@@ -45,6 +45,11 @@
       padding: 40px 20px;
     }
 
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
     h1 {
       font-size: 2.2rem;
       margin-bottom: 20px;
@@ -66,9 +71,6 @@
     p, li {
       margin-bottom: 10px;
       line-height: 1.6;
-      max-width: 800px;
-      margin-left: auto;
-      margin-right: auto;
       text-align: left;
     }
 
@@ -79,9 +81,7 @@
       padding: 12px 24px;
       text-decoration: none;
       font-weight: bold;
-      margin: 20px auto;
-      display: block;
-      width: fit-content;
+      margin: 20px 0;
     }
 
     .btn:hover {
@@ -116,58 +116,74 @@
   </ul>
 
   <div id="resume">
-    <h1>Professional Resume</h1>
+    <div class="container">
+      <h1>Professional Resume</h1>
 
-    <a href="/resume.pdf" download class="btn">Download PDF Version</a>
+      <a href="/resume.pdf" download class="btn">Download PDF Version</a>
 
-    <h2>Education</h2>
+      <div class="resume-section">
+        <h2>Education</h2>
 
-    <h3>Master of Science in Human-Computer Interaction and User Experience</h3>
-    <p>Drexel University</p>
-    <p>Expected Graduation: June 2026</p>
-    <p>Relevant Coursework: Web Design, Designing with Data, Prototyping the User Experience, UX Research Methods</p>
+        <div class="edu-item">
+          <p><strong>Master of Science in Human-Computer Interaction and User Experience</strong><br>
+          Drexel University<br>
+          Expected Graduation: June 2026</p>
+          <p>Relevant Coursework: Web Design, Designing with Data, Prototyping the User Experience, UX Research Methods</p>
+        </div>
 
-    <h3>Bachelor of Arts in English Literature</h3>
-    <p>State University</p>
-    <p>Graduated: May 2023</p>
-    <p>Minor in Computer Science</p>
-    <p>Graduated with Honors (3.8 GPA)</p>
+        <div class="edu-item">
+          <p><strong>Bachelor of Arts in English Literature</strong><br>
+          State University<br>
+          Graduated: May 2023</p>
+          <p>Minor in Computer Science</p>
+          <p>Graduated with Honors (3.8 GPA)</p>
+        </div>
+      </div>
 
-    <h2>Work Experience</h2>
+      <div class="resume-section">
+        <h2>Work Experience</h2>
 
-    <h3>Graduate Writing Center</h3>
-    <p>Drexel University</p>
-    <p>October 2024 - Present</p>
-    <ul>
-      <li>Assisted students in developing and improving their written communication skills through use of brainstorming, drafting, and outlining strategies.</li>
-      <li>Reviewed and provided constructive feedback to students enhancing their writing and evaluation skills.</li>
-    </ul>
+        <div class="job-item">
+          <p><strong>Graduate Writing Center</strong><br>
+          Drexel University<br>
+          October 2024 - Present</p>
+          <ul>
+            <li>Assisted students in developing and improving their written communication skills through use of brainstorming, drafting, and outlining strategies.</li>
+            <li>Reviewed and provided constructive feedback to students enhancing their writing and evaluation skills.</li>
+          </ul>
+        </div>
 
-    <h3>UI/UX Designer</h3>
-    <p>Department of Information Science</p>
-    <p>July 2020 - July 2024</p>
-    <ul>
-      <li>Designed and implemented responsive, visually appealing, and accessible user interfaces for web and mobile.</li>
-      <li>Conducted user research and usability testing to gather feedback and improve design solutions.</li>
-      <li>Collaborated with cross-functional teams to ensure design consistency and alignment with project goals.</li>
-      <li>Created wireframes, prototypes, and high-fidelity mockups using design tools such as Figma and Adobe XD.</li>
-    </ul>
+        <div class="job-item">
+          <p><strong>UI/UX Designer</strong><br>
+          Department of Information Science<br>
+          July 2020 - July 2024</p>
+          <ul>
+            <li>Designed and implemented responsive, visually appealing, and accessible user interfaces for web and mobile.</li>
+            <li>Conducted user research and usability testing to gather feedback and improve design solutions.</li>
+            <li>Collaborated with cross-functional teams to ensure design consistency and alignment with project goals.</li>
+            <li>Created wireframes, prototypes, and high-fidelity mockups using design tools such as Figma and Adobe XD.</li>
+          </ul>
+        </div>
+      </div>
 
-    <h2>Skills</h2>
-    <h3>Technical Skills and Tools</h3>
-    <ul>
-      <li>UI Design</li>
-      <li>UX Design</li>
-      <li>UX Research</li>
-      <li>Prototyping</li>
-      <li>Usability Testing</li>
-      <li>HTML, CSS, JavaScript</li>
-      <li>Figma, Adobe XD, Sketch</li>
-      <li>GitHub</li>
-      <li>Framer</li>
-    </ul>
+      <div class="resume-section">
+        <h2>Skills</h2>
+        <h3>Technical Skills and Tools</h3>
+        <ul>
+          <li>UI Design</li>
+          <li>UX Design</li>
+          <li>UX Research</li>
+          <li>Prototyping</li>
+          <li>Usability Testing</li>
+          <li>HTML, CSS, JavaScript</li>
+          <li>Figma, Adobe XD, Sketch</li>
+          <li>GitHub</li>
+          <li>Framer</li>
+        </ul>
+      </div>
 
-    <a href="/resume.pdf" download class="btn">Download PDF Version</a>
+      <a href="/resume.pdf" download class="btn">Download PDF Version</a>
+    </div>
   </div>
 
   <footer>
