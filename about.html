@@ -1,200 +1,131 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About Me - My Portfolio</title>
   <style>
-     {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: Arial, sans-serif;
-    }
-    
     body {
       background-color: #f5f5f5;
+      font-family: Arial, sans-serif;
       color: #333;
-    }
-    
-    nav {
-      position: fixed;
-      top: 0;
-      width: 100%;
-      background-color: lightblue;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      z-index: 1000;
-    }
-    
-    nav ul {
-      list-style-type: none;
-      display: flex;
+      margin: 0;
       padding: 0;
+    }
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      background-color: lightblue;
       overflow: hidden;
     }
-    
-    nav li {
+
+    li {
       float: left;
     }
-    
-    nav li a {
+
+    li a {
       display: block;
       color: black;
       text-align: center;
       padding: 18px 20px;
       text-decoration: none;
       font-weight: bold;
-      transition: all 0.3s ease;
     }
-    
-    nav li a:hover {
-      background-color:#e1c6ff;
+
+    li a:hover {
+      background-color: #e1c6ff;
     }
-    
-    nav li a.active {
+
+    li a.active {
       background-color: #c191f7;
     }
-    
-    section {
-      min-height: 100vh;
-      padding: 80px 20px 40px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
-    
-    .container {
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-    
-    h1 {
-      font-size: 2.5rem;
-      margin-bottom: 20px;
-      color: #222;
-    }
-    
-    h2 {
-      font-size: 2rem;
-      margin-bottom: 15px;
-      color: #333;
-    }
-    
-    p {
-      margin-bottom: 15px;
-      line-height: 1.6;
-    }
-    
-    #home {
+
+    #about {
       background-color: #daeaea;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      margin-bottom: 20px;
       text-align: center;
     }
-    
-    .hero {
-      padding: 40px 0;
-    }
-    
-    .hero h1 {
-      font-size: 3.5rem;
-      margin-bottom: 20px;
-    }
-    
-    .hero p {
-      font-size: 1.2rem;
+
+    .about-text {
       max-width: 800px;
-      margin: 0 auto 30px;
+      margin: 0 auto;
     }
-    
-    .btn {
-      display: inline-block;
-      background-color: #333;
-      color: white;
-      padding: 12px 24px;
-      border-radius: 4px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: all 0.3s ease;
+
+    .about-text p {
+      margin-bottom: 15px;
+      line-height: 1.6;
+      text-align: left;
     }
-    
-    .btn:hover {
-      background-color: #555;
-      transform: translateY(-2px);
+
+    .about-text strong {
+      display: block;
+      margin: 20px 0 10px;
     }
-    
+
     footer {
       background-color: #333;
       color: white;
       text-align: center;
       padding: 20px;
     }
-    
+
     footer a {
       color: lightblue;
       text-decoration: none;
     }
-    
+
     footer a:hover {
       text-decoration: underline;
-    }
-    
-    @media (max-width: 768px) {
-      .hero h1 {
-        font-size: 2.5rem;
-      }
-    }
-    
-    .profile-image {
-      max-width: 250px;
-      margin: 20px auto;
-      display: block;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
     }
   </style>
 </head>
 <body>
-  
-  <nav id="navbar">
-    <ul>
-      <li><a href="index.html" class="nav-link">Home</a></li>
-      <li><a href="about.html" class="nav-link active">About</a></li>
-      <li><a href="resume.html" class="nav-link">Resume</a></li>
-      <li><a href="projects.html" class="nav-link">Projects</a></li>
-      <li><a href="associations.html" class="nav-link">Associations</a></li>
-    </ul>
-  </nav>
-  
-  <section id="about">
-    <div class="container">
-      <h1>About Me</h1>
-          <p>I’m a UI/UX Designer passionate about crafting intuitive and engaging digital experiences that solve real-world problems. By understanding user needs, I translate insights into visually appealing and functional designs. My goal is to create products that not only look great but also deliver seamless, user-centered experiences.
 
-            Currently I am in the MS in Human-Computer Interaction and User Experience program at Drexel University. With a Bachelor’s in Political Science, I’ve successfully transitioned into design, bringing a fresh perspective to creating meaningful digital experiences. This switch has instilled in me adaptability and analytical thinking, skills I apply to make sure my work aligns with both user needs and business goals. I thrive in collaborative environments where I can share ideas, learn from others, and grow as a designer.
-            I believe great design is a balance of creativity, strategy, and empathy. My design process is rooted in user-centered principles
-            <br> 
-            <p><strong>Research & Discovery;</strong></p>
-            <p> I start by understanding the problem space, gathering insights through user research, competitive analysis, and stakeholder collaboration.</p>
-    
-            <p> <strong>Ideation & Exploration;</strong> </p>
-            <p>I brainstorm, sketch, and prototype ideas, iterating based on feedback and testing to refine the best solutions.</p>
-    
-            <p> <strong>Design & Execution;</strong> </p>
-            <p>I craft clean, visually appealing, and functional designs that enhance the user experience.</p>
-    
-            <p> <strong>Testing & Iteration;</strong> </p>
-            <p>I continuously test and refine my designs, ensuring they are intuitive, accessible, and impactful.</p>
-    
-            <br>
-            
-          <p>I’m proficient in Figma and experienced in user research, usability testing, prototyping, and tools like Framer. I also have foundational experience in web development (HTML, CSS, and JavaScript). My journey into design has led me to explore other creative and technical areas like 3D modeling with Blender and building websites.</p>
-            
-          <p> Off screen, I enjoy playing video games(especially EAFC) and traveling. While I’m not a fan of long flights or drives, I love discovering new places, experiencing different cultures, and meeting new people.
-            I’m always open to new challenges and opportunities to grow.</p>
-        </div>
-  
-        <footer>
-          <p> Contact me: meg444@drexel.edu</p>
-          <p>&copy; 2025 My Portfolio. All Rights Reserved.</p>
-          <p>Created for INFO 552 Assignment</p>
-        </footer>
-      </body>
-      </html>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html" class="active">About</a></li>
+    <li><a href="resume.html">Resume</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="associations.html">Associations</a></li>
+  </ul>
+
+  <div id="about">
+    <h1>About Me</h1>
+    <div class="about-text">
+      <p>I’m a UI/UX Designer passionate about crafting intuitive and engaging digital experiences that solve real-world problems. By understanding user needs, I translate insights into visually appealing and functional designs. My goal is to create products that not only look great but also deliver seamless, user-centered experiences.</p>
+
+      <p>Currently I am in the MS in Human-Computer Interaction and User Experience program at Drexel University. With a Bachelor’s in Political Science, I’ve successfully transitioned into design, bringing a fresh perspective to creating meaningful digital experiences. This switch has instilled in me adaptability and analytical thinking, skills I apply to make sure my work aligns with both user needs and business goals. I thrive in collaborative environments where I can share ideas, learn from others, and grow as a designer.</p>
+
+      <p>I believe great design is a balance of creativity, strategy, and empathy. My design process is rooted in user-centered principles.</p>
+
+      <strong>Research & Discovery</strong>
+      <p>I start by understanding the problem space, gathering insights through user research, competitive analysis, and stakeholder collaboration.</p>
+
+      <strong>Ideation & Exploration</strong>
+      <p>I brainstorm, sketch, and prototype ideas, iterating based on feedback and testing to refine the best solutions.</p>
+
+      <strong>Design & Execution</strong>
+      <p>I craft clean, visually appealing, and functional designs that enhance the user experience.</p>
+
+      <strong>Testing & Iteration</strong>
+      <p>I continuously test and refine my designs, ensuring they are intuitive, accessible, and impactful.</p>
+
+      <p>I’m proficient in Figma and experienced in user research, usability testing, prototyping, and tools like Framer. I also have foundational experience in web development (HTML, CSS, and JavaScript). My journey into design has led me to explore other creative and technical areas like 3D modeling with Blender and building websites.</p>
+
+      <p>Off screen, I enjoy playing video games (especially EAFC) and traveling. While I’m not a fan of long flights or drives, I love discovering new places, experiencing different cultures, and meeting new people. I’m always open to new challenges and opportunities to grow.</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>Contact me: meg444@drexel.edu</p>
+    <p>&copy; 2025 My Portfolio. All Rights Reserved.</p>
+    <p>Created for INFO 552 Assignment</p>
+  </footer>
+
+</body>
+</html>
