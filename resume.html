@@ -11,7 +11,7 @@
       padding: 0;
     }
 
-    ul {
+    ul.nav {
       list-style-type: none;
       margin: 0;
       padding: 0;
@@ -19,11 +19,11 @@
       overflow: hidden;
     }
 
-    li {
+    ul.nav li {
       float: left;
     }
 
-    li a {
+    ul.nav li a {
       display: block;
       color: black;
       text-align: center;
@@ -32,11 +32,11 @@
       font-weight: bold;
     }
 
-    li a:hover {
+    ul.nav li a:hover {
       background-color: #e1c6ff;
     }
 
-    li a.active {
+    ul.nav li a.active {
       background-color: #c191f7;
     }
 
@@ -68,7 +68,7 @@
       margin-bottom: 10px;
     }
 
-    p, li {
+    p, .resume-section li {
       margin-bottom: 10px;
       line-height: 1.6;
       text-align: left;
@@ -93,6 +93,15 @@
       color: white;
       text-align: center;
       padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    footer p {
+      margin: 5px 0;
+      text-align: center;
     }
 
     footer a {
@@ -103,11 +112,16 @@
     footer a:hover {
       text-decoration: underline;
     }
+    
+    .resume-section ul {
+      list-style-type: disc;
+      padding-left: 20px;
+    }
   </style>
 </head>
 <body>
 
-  <ul>
+  <ul class="nav">
     <li><a href="index.html">Home</a></li>
     <li><a href="about.html">About</a></li>
     <li><a href="resume.html" class="active">Resume</a></li>
@@ -118,9 +132,6 @@
   <div id="resume">
     <div class="container">
       <h1>Professional Resume</h1>
-
-      <a href="/resume.pdf" download class="btn">Download PDF Version</a>
-
       <div class="resume-section">
         <h2>Education</h2>
 
@@ -132,11 +143,10 @@
         </div>
 
         <div class="edu-item">
-          <p><strong>Bachelor of Arts in English Literature</strong><br>
-          State University<br>
-          Graduated: May 2023</p>
-          <p>Minor in Computer Science</p>
-          <p>Graduated with Honors (3.8 GPA)</p>
+          <p><strong>Bachelor of Arts in Political Science</strong><br>
+        University of Ghana<br>
+          Graduated: November 2021</p>
+          <p>Minor in Information Studies</p>
         </div>
       </div>
 
@@ -144,7 +154,7 @@
         <h2>Work Experience</h2>
 
         <div class="job-item">
-          <p><strong>Graduate Writing Center</strong><br>
+          <p><strong>Graduate Writing Consultant</strong><br>
           Drexel University<br>
           October 2024 - Present</p>
           <ul>
@@ -155,7 +165,7 @@
 
         <div class="job-item">
           <p><strong>UI/UX Designer</strong><br>
-          Department of Information Science<br>
+          Gamezone Ghana<br>
           July 2020 - July 2024</p>
           <ul>
             <li>Designed and implemented responsive, visually appealing, and accessible user interfaces for web and mobile.</li>
